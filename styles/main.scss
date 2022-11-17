@@ -1,0 +1,20 @@
+@import 'var.scss';
+@import 'utils.scss';
+@import 'font.scss';
+@import 'app.scss';
+@import 'mixin';
+
+@import './pages/home.scss';
+@import './pages/login.scss';
+@import './pages/confirm.scss';
+@import './pages/signup.scss';
+@import './pages/program-details.scss';
+
+@import '/styles/components/text-field.style.scss';
+@import '/styles/components/common/heaer.style.scss';
+@import '/styles/components/common/footer.style.scss';
+@import '/styles/components/program.style.scss';
+@import '/styles/components/EducationCard.style.scss';
+@import '/styles/components/OrderProgramCard.style.scss';
+@import '/styles/components/Product.style.scss';
+@import '/styles/components/programInfo.scss';

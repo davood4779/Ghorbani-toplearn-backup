@@ -1,0 +1,60 @@
+.OrderProgram {
+  width: 100%;
+  border: 1px solid var(--whiteSmoke-d3);
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  height: 131px;
+  display: flex;
+  margin-bottom: 10px;
+  .content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    p {
+      width: 90%;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--gray-d1);
+      line-height: 16px;
+      flex-grow: 1;
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 22.4px;
+    }
+    .OrderProgram-footer {
+      display: flex;
+      color: var(--primary-d1);
+      gap: 5px;
+      bottom: 13px;
+      right: 0;
+      button {
+        border: 1px solid var(--primary-d1);
+        border-radius: 30px;
+        background-color: transparent;
+        padding: 5px 8px;
+        outline: none;
+        span {
+          color: var(--primary-d1);
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .OrderProgram-image {
+    width: 35%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-d3);
+    img {
+      padding: 13px 20px;
+      border-radius: 8px;
+    }
+  }
+}

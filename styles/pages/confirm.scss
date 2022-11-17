@@ -1,0 +1,132 @@
+.confirm {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .confirm-bg {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .confirm-box {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    opacity: 1;
+    border-radius: 16px;
+    margin-bottom: 8vh;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    z-index: 2;
+
+    .confirm-box-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+    }
+    .confirm-content {
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 7%;
+      color: var(--white);
+      .confirm-content-header {
+        font-size: 15px;
+        line-height: 24px;
+        z-index: 5;
+        margin-right: 8px;
+      }
+      .confirm-body-text {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+      }
+      button {
+        z-index: 5;
+        background-color: var(--primary);
+        border-radius: 24px;
+        border: 0;
+        outline: none;
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+      }
+      .confirm-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 5;
+        gap: 10px;
+      }
+      .confirm-header img {
+        width: 70%;
+      }
+      .confirm-header span {
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        text-transform: capitalize;
+      }
+      .confirm-body {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .confirm-code-container {
+        direction: ltr;
+        gap: 10px;
+        input {
+          font-family: 'IranSansNum';
+          width: 20px;
+          font-size: 19px;
+          border: 0;
+          outline: none;
+          padding: 5px 2px;
+          padding-right: 5px;
+          background-color: transparent;
+          border-bottom: 1px solid var(--white);
+          color: var(--white);
+          position: relative;
+          direction: ltr;
+        }
+        input:focus {
+          color: var(--primary-d1) !important;
+          border-bottom: 1px solid var(--primary-d1) !important;
+        }
+      }
+      .code-text {
+        text-align: center;
+        font-size: 12px;
+        line-height: 19.2px;
+        margin-bottom: 66px;
+        z-index: 5;
+      }
+      .code-text span {
+        color: var(--primary-d1);
+        margin-right: 3px;
+      }
+    }
+  }
+}

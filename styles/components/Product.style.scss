@@ -1,0 +1,121 @@
+.Product {
+  width: 100%;
+  border: 1px solid var(--whiteSmoke-d3);
+  border-radius: 8px;
+  height: 117px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    .discount {
+      color: #da3838;
+      span {
+        font-size: 13px;
+      }
+      img {
+        width: 16px;
+      }
+    }
+    p {
+      width: 90%;
+      font-size: 12px;
+      line-height: 19.2px;
+      color: var(--gray-d2);
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 22.4px;
+    }
+    .Product-footer {
+      display: flex;
+      justify-content: flex-end;
+      color: var(--primary-d1);
+      gap: 5px;
+      bottom: 10px;
+      right: 0;
+      gap: 13px;
+      direction: ltr;
+      button {
+        min-width: 89px;
+        border: 1px solid var(--primary-d1);
+        border-radius: 30px;
+        background-color: transparent;
+        padding: 5px 11px;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          color: var(--primary-d1);
+          font-weight: 500;
+          font-size: 12px;
+        }
+        img {
+          width: 10px;
+        }
+        img:first-child {
+          margin-left: 20px;
+        }
+        img:last-child {
+          margin-right: 20px;
+        }
+      }
+      .empty-product {
+        display: flex;
+        justify-content: center;
+        border-color: var(--gray-d1);
+        span {
+          color: var(--gray-d1);
+        }
+      }
+      .price {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        color: var(--gray-d2);
+        p , span {
+          font-size: 12px;
+        }
+        img {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  .col-5 {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-d3);
+    img {
+      height: 100%;
+      padding: 3px 15px;
+      border-radius: 8px;
+    }
+  }
+}
+@media (max-width: 370px) {
+  .Product {
+    height: 150px;
+    .Product-footer {
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 140px;
+      gap: 0 !important;
+      align-items: flex-end;
+      .price {
+        width: fit-content;
+      }
+      button {
+        width: fit-content;
+      }
+    }
+  }
+}

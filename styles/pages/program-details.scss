@@ -1,0 +1,25 @@
+.program-details {
+  padding: 10px 20px;
+  margin-bottom: 80px;
+  .program-details-header {
+    margin-bottom: 24px;
+    button {
+      background-color: var(--white-d3);
+      padding: 8px 12px;
+      border-radius: 30px;
+      gap: 8px;
+      outline: none;
+      border: none;
+      span {
+          color: var(--dark);
+      }
+    }
+    .current-date {
+      font-size: 12px;
+      color: var(--gray-d2);
+    }
+  }
+  .program-details-info-container {
+      gap: 10px;
+  }
+}

@@ -1,0 +1,102 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .login-bg {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.4962359943977591) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .login-box {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    opacity: 1;
+    border-radius: 16px;
+    margin-bottom: 8vh;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    z-index: 2;
+
+    .login-box-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+    }
+    .login-content {
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 24px 7% 16px;
+      color: var(--white);
+      .login-content-header {
+        font-size: 15px;
+        line-height: 24px;
+        z-index: 5;
+        margin-right: 8px;
+      }
+      button {
+        z-index: 5;
+        background-color: var(--primary);
+        border-radius: 24px;
+        border: 0;
+        outline: none;
+        padding: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .login-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 5;
+        gap: 10px;
+      }
+      .login-header img {
+        width: 70%;
+      }
+      .login-header span {
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        text-transform: capitalize;
+      }
+      .login-body {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+        margin: 18px 0 56px;
+      }
+      .text-footer {
+        margin: 0 0 10px;
+        z-index: 5;
+        font-size: 11px;
+      }
+      .text-footer span {
+        color: var(--primary-d1);
+      }
+    }
+  }
+}
